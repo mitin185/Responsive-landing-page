@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AeroVista Drones - Capturing The World</title>
+  <link rel="stylesheet" href="responsive-landing-page.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">AeroVista</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#contact" class="btn-primary">Book Now</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Elevate Your Vision<br />With AeroVista Drones</h1>
+        <p>Stunning aerial photography and videography services capturing your world from new heights.</p>
+        <a href="#contact" class="btn-primary hero-button">Book a Flight</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80" alt="Drone flying over landscape" />
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services section-padding">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <img src="https://img.icons8.com/ios-filled/64/008080/camera.png" alt="Photography icon" />
+          <h3>Aerial Photography</h3>
+          <p>High-resolution images captured with precision for real estate, events, and marketing.</p>
+        </article>
+        <article class="service-card">
+          <img src="https://img.icons8.com/ios-filled/64/008080/video-call.png" alt="Videography icon" />
+          <h3>Aerial Videography</h3>
+          <p>Smooth cinematic videos offering unique perspectives for storytelling and commercials.</p>
+        </article>
+        <article class="service-card">
+          <img src="https://img.icons8.com/ios-filled/64/008080/map.png" alt="Mapping icon" />
+          <h3>Mapping & Surveying</h3>
+          <p>Accurate terrain mapping and surveying solutions for construction, agriculture, and research.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery section-padding">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=400&q=80" alt="Mountain aerial view" />
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="City aerial view" />
+        <img src="https://images.unsplash.com/photo-1486308510493-cb44f82aa5d7?auto=format&fit=crop&w=400&q=80" alt="Coastline aerial view" />
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Forest aerial view" />
+        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=400&q=80" alt="Desert aerial view" />
+        <img src="https://images.unsplash.com/photo-1499346030926-9a72daac6c63?auto=format&fit=crop&w=400&q=80" alt="Bridge aerial view" />
+      </div>
+    </div>
+  </section>
+
+  <section id="plans" class="plans section-padding">
+    <div class="container">
+      <h2>Pricing Plans</h2>
+      <div class="plans-grid">
+        <div class="plan-card">
+          <h3>Starter</h3>
+          <p class="plan-price">$99 <span>/ session</span></p>
+          <ul>
+            <li>30 minutes flight time</li>
+            <li>10 edited photos</li>
+            <li>Basic video highlights</li>
+          </ul>
+          <a href="#contact" class="btn-secondary">Choose Starter</a>
+        </div>
+        <div class="plan-card featured">
+          <h3>Pro</h3>
+          <p class="plan-price">$199 <span>/ session</span></p>
+          <ul>
+            <li>60 minutes flight time</li>
+            <li>25 edited photos</li>
+            <li>Full HD video</li>
+          </ul>
+          <a href="#contact" class="btn-primary">Choose Pro</a>
+        </div>
+        <div class="plan-card">
+          <h3>Enterprise</h3>
+          <p class="plan-price">Custom Pricing</p>
+          <ul>
+            <li>Flexible flight time</li>
+            <li>Unlimited photos and video</li>
+            <li>Dedicated drone operator</li>
+          </ul>
+          <a href="#contact" class="btn-secondary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section-padding">
+    <div class="container contact-container">
+      <h2>Book Your Flight</h2>
+      <form id="bookingForm" class="contact-form" novalidate>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+        <span class="error-message" aria-live="polite"></span>
+
+        <label for="emailAddress">Email Address</label>
+        <input type="email" id="emailAddress" name="emailAddress" placeholder="you@example.com" required />
+        <span class="error-message" aria-live="polite"></span>
+
+        <label for="serviceSelect">Select Service</label>
+        <select id="serviceSelect" name="serviceSelect" required>
+          <option value="">Choose a service</option>
+          <option value="photography">Aerial Photography</option>
+          <option value="videography">Aerial Videography</option>
+          <option value="mapping">Mapping & Surveying</option>
+        </select>
+        <span class="error-message" aria-live="polite"></span>
+
+        <label for="message">Additional Details</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us more..." required></textarea>
+        <span class="error-message" aria-live="polite"></span>
+
+        <button type="submit" class="btn-primary">Submit Booking</button>
+        <p id="formStatusMessage" role="alert" aria-live="assertive"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <small>&copy; 2024 AeroVista Drones. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="responsive-landing-page.js"></script>
+</body>
+</html>
